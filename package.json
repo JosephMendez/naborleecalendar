@@ -1,14 +1,18 @@
 {
   "name": "naborleecalendar",
-  "version": "0.1.0",
-  "private": true,
+  "version": "2.1.9",
+  "private": false,
+  "main": "dist/naborleecalendar.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-package": "vue-cli-service build --target lib --name=naborleecalendar ./src/components/NaborleeCalendar.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "dayjs": "^1.10.4",
+    "naborleecalendar": "^2.1.7",
     "vue": "^2.6.11"
   },
   "devDependencies": {

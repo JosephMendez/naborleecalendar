@@ -1,24 +1,11 @@
 # naborleecalendar
 
-## Project setup
+## Install Plugin
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+yarn add naborleecalendar 
 ```
 
-### Compiles and minifies for production
+## Sample Usage
 ```
-yarn build
+<NaborleeCalendar :noofmonths="numberofMonths" purpose="booking" :bookeddays="arraybooked" @updatedbookingdates="updatedbookingdates"/>
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
