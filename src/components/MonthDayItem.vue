@@ -11,9 +11,11 @@
        }">
        <span class="button" v-if="day.isCurrentMonth" @click="dateSelected(day.date)">
            <span>{{ label }}</span>
+           <span class="strike"></span>
         </span>
        <span class="button" v-else disabled>
            <span>{{ label }}</span>
+           <span class="strike"></span>
        </span>
     </div>
     </li>
@@ -101,10 +103,22 @@ export default {
 }
 
 .date-pastdate--list .button span, .date-blocked--list .button {
-    text-decoration: line-through;
     color: #000;
     text-decoration-thickness: 2px;
 }
+
+.date-blocked--list .button::after,
+.date-pastdate--list .button::after {
+    content: '';
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 50%;
+    height: 3%;
+    background: #000;
+}
+
 .date-blocked--list .button span {
     position: relative;
     z-index: 999;
@@ -129,7 +143,7 @@ export default {
 }
 
 .date-unblocked--list .button {
-    background: lightgreen;
+    /* background: lightgreen; */
 }
 .date-unblocked--list .button::after {
     cursor: pointer !important;
@@ -142,7 +156,7 @@ export default {
     position: absolute !important;  
     z-index: 2;
     /* background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) calc(50% - 1px), #484848, rgba(0, 0, 0, 0) calc(50% + 1px)) !important; */
-    background:lightgreen;
+    /* background:lightgreen; */
     border: 1px solid #eee;
 }
 .date-unblocked--list .button span {

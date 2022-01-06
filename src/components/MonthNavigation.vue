@@ -1,7 +1,7 @@
 <template>
     <div class="calendar-month-navi">
-        <span @click="selectNext" v-if="next"> NEXT </span>
-        <span @click="selectPrevious" v-if="prev"> PREV </span>
+        <span @click="selectNext" v-if="next"> NEXT <img src="../assets/arrow-right.png" alt="arrow right"> </span>
+        <span @click="selectPrevious" v-if="prev"> PREV <img src="../assets/arrow-left.png" alt="arrow left"> </span>
     </div>
 </template>
 

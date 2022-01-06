@@ -14,7 +14,7 @@ export default {
         available: {
             type: String,
             required: false,
-            default: 'lightgreen'
+            default: '#FFF'
         },
         booked: {
             type: String,
@@ -55,7 +55,6 @@ export default {
 .nc-list .partially-booked::after {
     content: "";
     position: absolute;
-    background: lightgreen;
     width: 10px;
     height: 15px;
     margin-top: 0px;
