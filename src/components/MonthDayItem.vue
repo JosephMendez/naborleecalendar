@@ -103,7 +103,7 @@ export default {
 }
 
 .date-pastdate--list .button span, .date-blocked--list .button {
-    color: #000;
+    color: #aaa;
     text-decoration-thickness: 2px;
 }
 
@@ -114,15 +114,14 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
-    width: 50%;
+    width: 15%;
     height: 3%;
-    background: #000;
+    background: #aaa;
 }
 
 .date-blocked--list .button span {
     position: relative;
     z-index: 999;
-    color: #000;
 }
 .calendar-day--not-current .button::after {
     background-color: #fff !important;
